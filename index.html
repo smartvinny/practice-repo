@@ -1,10 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <title>Link</title>
-  </head>
-  <body>
-    <a href="image.html">Click here</a>
+<head>
+    <title>Forms</title>
+</head>
+<body>
+    <form>
+        <input type="text" placeholder="First Name" name="first">
+        <input type="password" placeholder="Password" name="password">
+        <div>
+            Favorite Color:
+            <input name="color" type="radio" value="blue"> Blue
+            <input name="color" type="radio" value="green"> green
+            <input name="color" type="radio" value="yellow"> Yellow
+            <input name="color" type="radio" value="red"> Red
+        </div>
 
-  </body>
+        <div>
+            
+            <input name="country" list="countries" placeholder="Country">
+            <datalist id="countries" name="country">
+                <option value="KE">Kenya</option>
+                <option value="TZ">Tanzania</option>
+                <option value="UG">Uganda</option>
+                <option value="US">United States</option>
+                <!-- Add more countries here -->
+            </datalist>
+        </div>
+        <input type="submit">
+    </form>
+</body>
 </html>
